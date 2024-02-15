@@ -943,6 +943,10 @@ class GoTrueClient {
     }
   }
 
+  Future<void> startAutoRefresh() async {}
+
+  Future<void> stopAutoRefresh() async {}
+
   /// Returns the OAuth sign in URL constructed from the [url] parameter.
   Future<OAuthResponse> _getUrlForProvider(
     OAuthProvider provider, {
